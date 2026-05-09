@@ -23,63 +23,98 @@
             </div>
         </div>
         <div class="hero-content">
-            <p class="eyebrow">Local cafe • Small-batch roast</p>
-            <h1>Warm cups, slow mornings, and a cafe that feels like home.</h1>
-            <p>Handcrafted espresso, cozy corners, and fresh pastries baked daily in the heart of the neighborhood.</p>
+            <p class="eyebrow">FiCo Cafe • Small-batch roast</p>
+            <h1>Savor Every Moment with Every Sip.</h1>
+            <p>Comforting brews, warm light, and a space that feels like your second home.</p>
             <div class="hero-actions">
-                <a href="#menu" class="cta-button">Explore Our Menu</a>
-                <a href="#contact" class="ghost-button">Reserve a Table</a>
+                <a href="#menu" class="cta-button">View Menu</a>
             </div>
             <div class="hero-highlights">
                 <div>
-                    <span class="stat">8AM–9PM</span>
-                    <span class="stat-label">Daily hours</span>
+                    <span class="stat">Cozy Interior</span>
+                    <span class="stat-label">Warm lighting</span>
                 </div>
                 <div>
-                    <span class="stat">Single-origin</span>
-                    <span class="stat-label">Seasonal beans</span>
+                    <span class="stat">Freshly Brewed</span>
+                    <span class="stat-label">Daily roasted</span>
                 </div>
                 <div>
-                    <span class="stat">Free Wi‑Fi</span>
-                    <span class="stat-label">Study friendly</span>
+                    <span class="stat">Local Favorite</span>
+                    <span class="stat-label">Community vibes</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="menu" class="menu">
-        <div class="container menu-grid">
-            <div class="menu-intro">
-                <p class="eyebrow">Featured menu</p>
-                <h2>Signature drinks & cozy bites.</h2>
-                <p>Seasonal flavors, classic espresso, and pastries baked fresh every morning.</p>
-                <a href="#contact" class="text-link">See full menu</a>
+        <div class="container menu-section">
+            <div class="menu-header">
+                <p class="eyebrow">Explore menu options</p>
+                <h2>FiCo Cafe Specials</h2>
             </div>
-            <div class="menu-items">
-                <article class="menu-item">
-                    <img src="{% static 'images/coffee1.jpg' %}" alt="Vanilla Bean Frappe">
-                    <div class="menu-item-body">
-                        <h3>Vanilla Bean Frappe</h3>
-                        <p>Silky vanilla, crushed ice, and a mellow espresso finish.</p>
-                        <span class="price">$4.75</span>
+            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+                <button class="menu-tab active" type="button" role="tab" aria-selected="true" data-image="{% static 'images/menu-coffee.png' %}">Coffee Based</button>
+                <button class="menu-tab" type="button" role="tab" aria-selected="false" data-image="{% static 'images/menu-tea.png' %}">Teas & Refreshments</button>
+                <button class="menu-tab" type="button" role="tab" aria-selected="false" data-image="{% static 'images/menu-frappe.png' %}">Frappe</button>
+            </div>
+            <div class="menu-layout">
+                <div class="menu-image">
+                    <img id="menuDisplay" src="{% static 'images/menu-coffee.png' %}" alt="FiCo Cafe menu">
+                </div>
+                <div class="menu-list" aria-live="polite">
+                    <div class="menu-list-item">
+                        <div>
+                            <h3>Caramel Macchiato</h3>
+                            <p>Espresso, vanilla, steamed milk, and caramel drizzle.</p>
+                        </div>
+                        <span class="menu-price">₱169</span>
                     </div>
-                </article>
-                <article class="menu-item">
-                    <img src="{% static 'images/coffee2.jpg' %}" alt="Mocha Latte">
-                    <div class="menu-item-body">
-                        <h3>Mocha Latte</h3>
-                        <p>Dark cocoa, steamed milk, and signature espresso.</p>
-                        <span class="price">$4.25</span>
+                    <div class="menu-list-item">
+                        <div>
+                            <h3>Spanish Latte</h3>
+                            <p>Bold espresso with sweetened milk and a creamy finish.</p>
+                        </div>
+                        <span class="menu-price">₱149</span>
                     </div>
-                </article>
-                <article class="menu-item">
-                    <img src="{% static 'images/2 carousel.jpg' %}" alt="Salted caramel cold brew">
-                    <div class="menu-item-body">
-                        <h3>Salted Caramel Cold Brew</h3>
-                        <p>Slow‑steeped for 18 hours with a light caramel foam.</p>
-                        <span class="price">$5.00</span>
+                    <div class="menu-list-item">
+                        <div>
+                            <h3>Salted Caramel Latte</h3>
+                            <p>Sea salt, caramel syrup, and signature espresso.</p>
+                        </div>
+                        <span class="menu-price">₱169</span>
                     </div>
-                </article>
+                    <div class="menu-list-item">
+                        <div>
+                            <h3>White Mocha Latte</h3>
+                            <p>White chocolate, steamed milk, and espresso.</p>
+                        </div>
+                        <span class="menu-price">₱169</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <div>
+                            <h3>Mocha Latte</h3>
+                            <p>Dark cocoa, espresso, and velvety milk.</p>
+                        </div>
+                        <span class="menu-price">₱169</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="why">
+        <div class="container why-grid">
+            <div class="why-card">
+                <h3>Warm ambience</h3>
+                <p>Soft lighting, natural wood, and cozy seating inspired by the FiCo space.</p>
+            </div>
+            <div class="why-card">
+                <h3>Thoughtful brews</h3>
+                <p>Small‑batch beans and balanced espresso with every pour.</p>
+            </div>
+            <div class="why-card">
+                <h3>Relaxed pace</h3>
+                <p>A place to study, meet friends, or slow down with a good cup.</p>
             </div>
         </div>
     </section>
@@ -148,6 +183,9 @@
         let index = 0;
         const images = carousel.querySelectorAll('img');
 
+        const menuDisplay = document.getElementById('menuDisplay');
+        const menuTabs = document.querySelectorAll('.menu-tab');
+
         function showImage(n) {
             index = (n + images.length) % images.length;
             carousel.style.transform = `translateX(${-index * 100}%)`;
@@ -173,6 +211,19 @@
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        menuTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const image = tab.dataset.image;
+                menuDisplay.src = image;
+                menuTabs.forEach(item => {
+                    item.classList.remove('active');
+                    item.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+            });
         });
     </script>
 {% endblock %}
