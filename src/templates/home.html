@@ -3,7 +3,9 @@
 
 {% block content %}
     <section id="home" class="hero">
-        <div class="carousel">
+        <div class="hero-media">
+            <div class="hero-overlay"></div>
+            <div class="carousel">
             <div class="carousel-inner">
                 <img src="{% static 'images/1 carousel.jpg' %}" alt="Image 1">
                 <img src="{% static 'images/2 carousel.jpg' %}" alt="Image 2">
@@ -18,53 +20,119 @@
                 </div>
                 <button class="carousel-control next">❯</button>
             </div>
+            </div>
         </div>
         <div class="hero-content">
-            <h1>Welcome to FiCo Cafe</h1>
-            <p>Experience the finest coffee in town.</p>
-            <a href="#menu" class="cta-button">Explore Our Menu</a>
-        </div>
-    </section>
-
-    <section id="menu" class="menu">
-        <div class="container">
-            <h2>Featured</h2>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img src="{% static 'images/coffee1.jpg' %}" alt="Coffee">
-                    <h3>Vanilla Bean Frappe</h3>
-                    <p>Rich and aromatic espresso made from the finest beans.</p>
+            <p class="eyebrow">Local cafe • Small-batch roast</p>
+            <h1>Warm cups, slow mornings, and a cafe that feels like home.</h1>
+            <p>Handcrafted espresso, cozy corners, and fresh pastries baked daily in the heart of the neighborhood.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="cta-button">Explore Our Menu</a>
+                <a href="#contact" class="ghost-button">Reserve a Table</a>
+            </div>
+            <div class="hero-highlights">
+                <div>
+                    <span class="stat">8AM–9PM</span>
+                    <span class="stat-label">Daily hours</span>
                 </div>
-                <div class="menu-item">
-                    <img src="{% static 'images/coffee2.jpg' %}" alt="Coffee">
-                    <h3>Mocha Latte</h3>
-                    <p>Smooth and creamy latte with a perfect balance of milk and coffee.</p>
+                <div>
+                    <span class="stat">Single-origin</span>
+                    <span class="stat-label">Seasonal beans</span>
+                </div>
+                <div>
+                    <span class="stat">Free Wi‑Fi</span>
+                    <span class="stat-label">Study friendly</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="menu" class="menu">
+        <div class="container menu-grid">
+            <div class="menu-intro">
+                <p class="eyebrow">Featured menu</p>
+                <h2>Signature drinks & cozy bites.</h2>
+                <p>Seasonal flavors, classic espresso, and pastries baked fresh every morning.</p>
+                <a href="#contact" class="text-link">See full menu</a>
+            </div>
+            <div class="menu-items">
+                <article class="menu-item">
+                    <img src="{% static 'images/coffee1.jpg' %}" alt="Vanilla Bean Frappe">
+                    <div class="menu-item-body">
+                        <h3>Vanilla Bean Frappe</h3>
+                        <p>Silky vanilla, crushed ice, and a mellow espresso finish.</p>
+                        <span class="price">$4.75</span>
+                    </div>
+                </article>
+                <article class="menu-item">
+                    <img src="{% static 'images/coffee2.jpg' %}" alt="Mocha Latte">
+                    <div class="menu-item-body">
+                        <h3>Mocha Latte</h3>
+                        <p>Dark cocoa, steamed milk, and signature espresso.</p>
+                        <span class="price">$4.25</span>
+                    </div>
+                </article>
+                <article class="menu-item">
+                    <img src="{% static 'images/2 carousel.jpg' %}" alt="Salted caramel cold brew">
+                    <div class="menu-item-body">
+                        <h3>Salted Caramel Cold Brew</h3>
+                        <p>Slow‑steeped for 18 hours with a light caramel foam.</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At FiCo Cafe, we believe in bringing people together over a great cup of coffee. Our beans are carefully selected and roasted to perfection to ensure the best taste experience.</p>
+        <div class="container about-grid">
+            <div class="about-text">
+                <p class="eyebrow">Our story</p>
+                <h2>Crafted with care, shared with neighbors.</h2>
+                <p>FiCo started as a small neighborhood counter and grew into a warm gathering space for students, artists, and early risers. We roast in small batches and brew with intent so every cup tastes as good as the moment it creates.</p>
+                <div class="about-features">
+                    <div>
+                        <h3>House roast</h3>
+                        <p>Balanced, caramel‑toned espresso crafted weekly.</p>
+                    </div>
+                    <div>
+                        <h3>Fresh pastries</h3>
+                        <p>Butter croissants and seasonal tarts every morning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <h3>Visit FiCo Cafe</h3>
+                <p>123 Brew Street, Downtown</p>
+                <p>Open daily • 8:00 AM – 9:00 PM</p>
+                <a href="#contact" class="ghost-button">Get directions</a>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="mailto:info@ficocafe.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s plan your next visit.</h2>
+                <p>Questions, reservations, or catering? Leave a message and we’ll get back within 24 hours.</p>
+                <div class="contact-details">
+                    <p><strong>Phone:</strong> (000) 123‑4567</p>
+                    <p><strong>Email:</strong> info@ficocafe.com</p>
+                    <p><strong>Hours:</strong> Daily, 8AM – 9PM</p>
+                </div>
+            </div>
+            <form class="contact-form" action="mailto:info@ficocafe.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your order or reservation" required></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit">Send message</button>
             </form>
         </div>
     </section>

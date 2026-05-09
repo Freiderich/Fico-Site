@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FiCo Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
 
-    <header>
+    <header class="site-header">
         <div class="container-header">
             <a href="#" class="logo"><img src="{% static 'images/logo.jpg' %}" alt="FiCo Cafe Logo"></a>
             <div class="container-header-content">
@@ -19,13 +22,16 @@
                         <li><a href="#menu">Menu</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a class="nav-cta" href="#contact">Order Online</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    {% block content %}{% endblock %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 
     <footer>
         <div class="container">
