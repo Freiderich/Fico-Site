@@ -208,11 +208,6 @@
 
         showImage(index);
 
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
         menuTabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const image = tab.dataset.image;
