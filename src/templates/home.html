@@ -46,79 +46,6 @@
         </div>
     </section>
 
-    <section id="menu" class="menu">
-        <div class="container menu-section">
-            <div class="menu-header">
-                <p class="eyebrow">Explore menu options</p>
-                <h2>FiCo Cafe Specials</h2>
-            </div>
-            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-                <button class="menu-tab active" type="button" role="tab" aria-selected="true" data-image="{% static 'images/menu-coffee.png' %}">Coffee Based</button>
-                <button class="menu-tab" type="button" role="tab" aria-selected="false" data-image="{% static 'images/menu-tea.png' %}">Teas & Refreshments</button>
-                <button class="menu-tab" type="button" role="tab" aria-selected="false" data-image="{% static 'images/menu-frappe.png' %}">Frappe</button>
-            </div>
-            <div class="menu-layout">
-                <div class="menu-image">
-                    <img id="menuDisplay" src="{% static 'images/menu-coffee.png' %}" alt="FiCo Cafe menu">
-                </div>
-                <div class="menu-list" aria-live="polite">
-                    <div class="menu-list-item">
-                        <div>
-                            <h3>Caramel Macchiato</h3>
-                            <p>Espresso, vanilla, steamed milk, and caramel drizzle.</p>
-                        </div>
-                        <span class="menu-price">₱169</span>
-                    </div>
-                    <div class="menu-list-item">
-                        <div>
-                            <h3>Spanish Latte</h3>
-                            <p>Bold espresso with sweetened milk and a creamy finish.</p>
-                        </div>
-                        <span class="menu-price">₱149</span>
-                    </div>
-                    <div class="menu-list-item">
-                        <div>
-                            <h3>Salted Caramel Latte</h3>
-                            <p>Sea salt, caramel syrup, and signature espresso.</p>
-                        </div>
-                        <span class="menu-price">₱169</span>
-                    </div>
-                    <div class="menu-list-item">
-                        <div>
-                            <h3>White Mocha Latte</h3>
-                            <p>White chocolate, steamed milk, and espresso.</p>
-                        </div>
-                        <span class="menu-price">₱169</span>
-                    </div>
-                    <div class="menu-list-item">
-                        <div>
-                            <h3>Mocha Latte</h3>
-                            <p>Dark cocoa, espresso, and velvety milk.</p>
-                        </div>
-                        <span class="menu-price">₱169</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why" class="why">
-        <div class="container why-grid">
-            <div class="why-card">
-                <h3>Warm ambience</h3>
-                <p>Soft lighting, natural wood, and cozy seating inspired by the FiCo space.</p>
-            </div>
-            <div class="why-card">
-                <h3>Thoughtful brews</h3>
-                <p>Small‑batch beans and balanced espresso with every pour.</p>
-            </div>
-            <div class="why-card">
-                <h3>Relaxed pace</h3>
-                <p>A place to study, meet friends, or slow down with a good cup.</p>
-            </div>
-        </div>
-    </section>
-
     <section id="about" class="about">
         <div class="container about-grid">
             <div class="about-text">
@@ -141,6 +68,197 @@
                 <p>123 Brew Street, Downtown</p>
                 <p>Open daily • 8:00 AM – 9:00 PM</p>
                 <a href="#contact" class="ghost-button">Get directions</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container menu-section">
+            <div class="menu-header">
+                <p class="eyebrow">Explore menu options</p>
+                <h2>FiCo Cafe Specials</h2>
+                <div class="menu-divider" aria-hidden="true"></div>
+            </div>
+            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+                <button class="menu-tab active" type="button" role="tab" aria-selected="true" data-panel="coffee" data-image="{% static 'images/menu-coffee.jpg' %}">Coffee Based</button>
+                <button class="menu-tab" type="button" role="tab" aria-selected="false" data-panel="tea" data-image="{% static 'images/menu-tea.jpg' %}">Teas & Refreshments</button>
+                <button class="menu-tab" type="button" role="tab" aria-selected="false" data-panel="frappe" data-image="{% static 'images/menu-frappe.jpg' %}">Frappe</button>
+            </div>
+            <div class="menu-layout">
+                <div class="menu-image">
+                    <img id="menuDisplay" src="{% static 'images/menu-coffee.jpg' %}" alt="FiCo Cafe menu">
+                </div>
+                <div class="menu-panels" aria-live="polite">
+                    <div class="menu-panel active" data-panel="coffee">
+                        <div class="menu-table">
+                            <div class="menu-row menu-head">
+                                <span class="menu-item-name">Coffee Based</span>
+                                <span class="menu-size">Hot 8oz</span>
+                                <span class="menu-size">Hot 12oz</span>
+                                <span class="menu-size">Iced 12oz</span>
+                                <span class="menu-size">Iced 16oz</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Americano</span>
+                                <span class="menu-price">99</span>
+                                <span class="menu-price">119</span>
+                                <span class="menu-price">99</span>
+                                <span class="menu-price">119</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Cappuccino</span>
+                                <span class="menu-price">139</span>
+                                <span class="menu-price">159</span>
+                                <span class="menu-price">139</span>
+                                <span class="menu-price">159</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Spanish Latte</span>
+                                <span class="menu-price">149</span>
+                                <span class="menu-price">179</span>
+                                <span class="menu-price">149</span>
+                                <span class="menu-price">179</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Caramel Macchiato</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Salted Caramel Latte</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">White Mocha Latte</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Mocha Latte</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-panel" data-panel="tea">
+                        <div class="menu-table">
+                            <div class="menu-row menu-head">
+                                <span class="menu-item-name">Teas & Refreshments</span>
+                                <span class="menu-size">Hot 12oz</span>
+                                <span class="menu-size">Hot 16oz</span>
+                                <span class="menu-size">Iced 12oz</span>
+                                <span class="menu-size">Iced 16oz</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Signature Chocolate</span>
+                                <span class="menu-price">159</span>
+                                <span class="menu-price">199</span>
+                                <span class="menu-price">159</span>
+                                <span class="menu-price">199</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Pure Matcha</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">169</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Strawberry Matcha</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">179</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Serene Sunrise</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">119</span>
+                                <span class="menu-price">119</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Sunset Zettler</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">119</span>
+                                <span class="menu-price">119</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-panel" data-panel="frappe">
+                        <div class="menu-table">
+                            <div class="menu-row menu-head">
+                                <span class="menu-item-name">Frappe</span>
+                                <span class="menu-size">–</span>
+                                <span class="menu-size">–</span>
+                                <span class="menu-size">Iced 12oz</span>
+                                <span class="menu-size">Iced 16oz</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Strawberries & Cream</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Cookies & Cream</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Coffee Jelly</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Java Chip</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                            <div class="menu-row">
+                                <span class="menu-item-name">Chocolate Chip & Cream</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">–</span>
+                                <span class="menu-price">209</span>
+                                <span class="menu-price">209</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="why">
+        <div class="container why-grid">
+            <div class="why-card">
+                <h3>Warm ambience</h3>
+                <p>Soft lighting, natural wood, and cozy seating inspired by the FiCo space.</p>
+            </div>
+            <div class="why-card">
+                <h3>Thoughtful brews</h3>
+                <p>Small‑batch beans and balanced espresso with every pour.</p>
+            </div>
+            <div class="why-card">
+                <h3>Relaxed pace</h3>
+                <p>A place to study, meet friends, or slow down with a good cup.</p>
             </div>
         </div>
     </section>
@@ -183,8 +301,9 @@
         let index = 0;
         const images = carousel.querySelectorAll('img');
 
-        const menuDisplay = document.getElementById('menuDisplay');
         const menuTabs = document.querySelectorAll('.menu-tab');
+        const menuPanels = document.querySelectorAll('.menu-panel');
+        const menuDisplay = document.getElementById('menuDisplay');
 
         function showImage(n) {
             index = (n + images.length) % images.length;
@@ -210,14 +329,21 @@
 
         menuTabs.forEach(tab => {
             tab.addEventListener('click', () => {
+                const panel = tab.dataset.panel;
                 const image = tab.dataset.image;
-                menuDisplay.src = image;
                 menuTabs.forEach(item => {
                     item.classList.remove('active');
                     item.setAttribute('aria-selected', 'false');
                 });
+                menuPanels.forEach(item => {
+                    item.classList.remove('active');
+                });
                 tab.classList.add('active');
                 tab.setAttribute('aria-selected', 'true');
+                if (menuDisplay && image) {
+                    menuDisplay.src = image;
+                }
+                document.querySelector(`.menu-panel[data-panel="${panel}"]`).classList.add('active');
             });
         });
     </script>
