@@ -1,0 +1,127 @@
+.testimonial {
+    padding: 90px 0 110px;
+    background: #f7efe4;
+    color: #1c1f1c;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 48px;
+}
+
+.testimonial-header .eyebrow {
+    color: #c58d4c;
+    letter-spacing: 0.3em;
+}
+
+.testimonial-title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.6rem, 4vw, 3.6rem);
+    margin: 12px 0 0;
+}
+
+.testimonial-marquee {
+    display: flex;
+    gap: 24px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: testimonial-scroll-rtl 28s linear infinite;
+}
+
+.testimonial-card {
+    background: #151d1a;
+    color: #f6efe7;
+    padding: 28px 28px 26px;
+    border-radius: 8px;
+    width: min(520px, 78vw);
+    box-shadow: 0 18px 36px rgba(12, 15, 14, 0.35);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    --avatar-size: 56px;
+    --avatar-gap: 16px;
+}
+
+.testimonial-card::after {
+    content: "”";
+    position: absolute;
+    right: 30px;
+    bottom: -75px;
+    font-family: "Playfair Display", serif;
+    font-size: 8rem;
+    color: rgba(197, 141, 76, 0.5);
+}
+
+.testimonial-quote {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 24px;
+    min-height: 120px;
+    padding-left: calc(var(--avatar-size) + var(--avatar-gap));
+}
+
+.testimonial-person {
+    display: flex;
+    gap: var(--avatar-gap);
+    align-items: center;
+    margin-top: auto;
+}
+
+.testimonial-avatar {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c58d4c, #8a5a2b);
+    display: grid;
+    place-items: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    color: #1b1f1d;
+    flex-shrink: 0;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.testimonial-role {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(246, 239, 231, 0.7);
+}
+
+@keyframes testimonial-scroll-rtl {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .testimonial-track {
+        animation-duration: 36s;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial {
+        padding: 70px 0 90px;
+    }
+
+    .testimonial-card {
+        width: min(420px, 86vw);
+    }
+}
