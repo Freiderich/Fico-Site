@@ -1,0 +1,71 @@
+:root {
+    --ink: #f4efe7;
+    --muted: #cdbfaf;
+    --cream: #f6efe7;
+    --sand: #2a231f;
+    --latte: #c8a17b;
+    --coffee: #b98954;
+    --accent: #c58d4c;
+    --paper: #1b1f1d;
+    --shadow: rgba(10, 12, 12, 0.4);
+    --forest: #131a17;
+    --forest-soft: #1a231f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: var(--ink);
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #1b2320 0%, #121816 55%, #0c1110 100%);
+    line-height: 1.6;
+}
+
+main {
+    display: block;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+    color: rgba(245, 237, 226, 0.75);
+}
+
+.text-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.text-link::after {
+    content: "→";
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

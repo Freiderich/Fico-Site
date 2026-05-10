@@ -1,0 +1,44 @@
+.about {
+    padding: 90px 0;
+    background: linear-gradient(180deg, #111715 0%, #141b18 100%);
+}
+
+.about-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+}
+
+.about-text h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--muted);
+}
+
+.about-features {
+    display: grid;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.about-features h3 {
+    margin: 0 0 6px;
+    font-size: 1.1rem;
+}
+
+.about-card {
+    background: rgba(22, 28, 26, 0.92);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 20px 40px rgba(4, 6, 5, 0.45);
+}
+
+.about-card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
