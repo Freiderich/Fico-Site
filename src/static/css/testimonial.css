@@ -1,5 +1,5 @@
 .testimonial {
-    padding: 90px 0 110px;
+    padding: 90px 0 320px;
     background: #f7efe4;
     color: #1c1f1c;
     position: relative;
@@ -10,6 +10,8 @@
     text-align: center;
     max-width: 720px;
     margin: 0 auto 48px;
+    position: relative;
+    z-index: 2;
 }
 
 .testimonial-header .eyebrow {
@@ -29,6 +31,8 @@
     overflow: hidden;
     position: relative;
     padding: 10px 0;
+    margin-top: 8px;
+    z-index: 1;
 }
 
 .testimonial-track {

@@ -1,6 +1,12 @@
 .about {
     padding: 100px 0;
-    background: linear-gradient(135deg, #f5f0e8 0%, #efe6d7 45%, #f3ede3 100%);
+    background-image:
+        radial-gradient(circle at 12% 18%, rgba(197, 141, 76, 0.18), rgba(197, 141, 76, 0) 55%),
+        radial-gradient(circle at 28% 72%, rgba(197, 141, 76, 0.12), rgba(197, 141, 76, 0) 60%),
+        radial-gradient(circle at 58% 22%, rgba(28, 31, 28, 0.08), rgba(28, 31, 28, 0) 58%),
+        radial-gradient(circle at 76% 70%, rgba(197, 141, 76, 0.14), rgba(197, 141, 76, 0) 62%),
+        radial-gradient(circle at 88% 38%, rgba(28, 31, 28, 0.07), rgba(28, 31, 28, 0) 60%),
+        linear-gradient(135deg, #f5f0e8 0%, #efe6d7 45%, #f3ede3 100%);
     color: #1c1f1c;
     position: relative;
     overflow: hidden;

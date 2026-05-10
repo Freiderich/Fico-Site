@@ -1,7 +1,33 @@
 .why {
-    padding: 100px 0;
+    padding: 120px 0 150px;
     background: #f7efe4;
     color: #1c1f1c;
+    position: relative;
+    overflow: hidden;
+}
+
+.why::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -140px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(197, 141, 76, 0.25), rgba(247, 239, 228, 0));
+    pointer-events: none;
+}
+
+.why::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    right: -180px;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(28, 31, 28, 0.12), rgba(247, 239, 228, 0));
+    pointer-events: none;
 }
 
 .why-layout {
@@ -9,6 +35,8 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 48px;
     align-items: start;
+    position: relative;
+    z-index: 1;
 }
 
 .why-copy .eyebrow {
@@ -26,6 +54,18 @@
 .why-cards {
     display: grid;
     gap: 18px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.why-cards::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(197, 141, 76, 0.7), rgba(197, 141, 76, 0));
 }
 
 .why-card {
