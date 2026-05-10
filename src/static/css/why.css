@@ -1,33 +1,15 @@
 .why {
     padding: 120px 0 150px;
-    background: #f7efe4;
+    background-color: #f7efe4;
+    background-image:
+        radial-gradient(circle at 14% 28%, rgba(197, 141, 76, 0.2), rgba(247, 239, 228, 0) 55%),
+        radial-gradient(circle at 32% 76%, rgba(197, 141, 76, 0.16), rgba(247, 239, 228, 0) 58%),
+        radial-gradient(circle at 54% 36%, rgba(28, 31, 28, 0.1), rgba(247, 239, 228, 0) 56%),
+        radial-gradient(circle at 68% 82%, rgba(197, 141, 76, 0.18), rgba(247, 239, 228, 0) 60%),
+        radial-gradient(circle at 86% 52%, rgba(28, 31, 28, 0.08), rgba(247, 239, 228, 0) 58%);
     color: #1c1f1c;
     position: relative;
-    overflow: hidden;
-}
-
-.why::before {
-    content: "";
-    position: absolute;
-    top: -80px;
-    left: -140px;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(197, 141, 76, 0.25), rgba(247, 239, 228, 0));
-    pointer-events: none;
-}
-
-.why::after {
-    content: "";
-    position: absolute;
-    bottom: -120px;
-    right: -180px;
-    width: 380px;
-    height: 380px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(28, 31, 28, 0.12), rgba(247, 239, 228, 0));
-    pointer-events: none;
+    overflow: visible;
 }
 
 .why-layout {
