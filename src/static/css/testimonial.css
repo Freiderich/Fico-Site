@@ -75,6 +75,18 @@
     gap: var(--avatar-gap);
     align-items: center;
     margin-top: auto;
+    padding-top: 14px;
+    position: relative;
+}
+
+.testimonial-person::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(var(--avatar-size) + var(--avatar-gap));
+    right: 24px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(197, 141, 76, 0.6), rgba(197, 141, 76, 0));
 }
 
 .testimonial-avatar {
