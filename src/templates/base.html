@@ -8,19 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=20260510">
 </head>
 <body>
 
     <header class="site-header">
         <div class="container-header">
-            <a href="#home" class="logo">FiCo Cafe</a>
+            <a href="#home" class="logo" aria-label="FiCo Cafe">
+                <img src="{% static 'images/logo.jpg' %}" alt="FiCo Cafe logo">
+                <span class="logo-text">FiCo Cafe</span>
+            </a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#why">Why Choose</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Book a table</a></li>
                 </ul>
             </nav>
             <a href="#menu" class="nav-cta">View Menu</a>
