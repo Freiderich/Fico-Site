@@ -1,6 +1,13 @@
 .testimonial {
     padding: 90px 0 320px;
-    background: #f7efe4;
+    background-color: #f7efe4;
+    background-image:
+        radial-gradient(ellipse at 2% 88%, rgba(197, 141, 76, 0.22), rgba(197, 141, 76, 0) 60%),
+        radial-gradient(ellipse at 20% 90%, rgba(197, 141, 76, 0.18), rgba(197, 141, 76, 0) 58%),
+        radial-gradient(ellipse at 40% 92%, rgba(197, 141, 76, 0.16), rgba(197, 141, 76, 0) 58%),
+        radial-gradient(ellipse at 60% 91%, rgba(197, 141, 76, 0.18), rgba(197, 141, 76, 0) 60%),
+        radial-gradient(ellipse at 80% 90%, rgba(197, 141, 76, 0.2), rgba(197, 141, 76, 0) 60%),
+        radial-gradient(ellipse at 98% 88%, rgba(197, 141, 76, 0.22), rgba(197, 141, 76, 0) 60%);
     color: #1c1f1c;
     position: relative;
     overflow: hidden;
@@ -12,6 +19,31 @@
     margin: 0 auto 48px;
     position: relative;
     z-index: 2;
+}
+
+.testimonial-header::before,
+.testimonial-header::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    width: clamp(200px, 22vw, 360px);
+    border: 3px solid rgba(197, 141, 76, 0.65);
+    border-left: none;
+    border-radius: 80px;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.testimonial-header::before {
+    left: clamp(-380px, -28vw, -220px);
+}
+
+.testimonial-header::after {
+    right: clamp(-380px, -28vw, -220px);
+    border-left: 3px solid rgba(197, 141, 76, 0.65);
+    border-right: none;
 }
 
 .testimonial-header .eyebrow {

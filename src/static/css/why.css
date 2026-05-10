@@ -94,6 +94,32 @@
     margin-top: 8px;
 }
 
+.why-media::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 18px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px dashed rgba(197, 141, 76, 0.55);
+    box-shadow: 0 10px 20px rgba(28, 24, 20, 0.08);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.why-media::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 44px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(197, 141, 76, 0.22), rgba(197, 141, 76, 0));
+    pointer-events: none;
+}
+
 .why-photo {
     width: 100%;
     border-radius: 6px;
