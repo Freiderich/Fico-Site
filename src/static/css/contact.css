@@ -34,43 +34,27 @@
     box-shadow: 0 20px 40px rgba(4, 6, 5, 0.5);
 }
 
-.contact label {
-    display: block;
-    margin: 12px 0 6px;
+.contact-hours {
+    display: grid;
+    gap: 14px;
+}
+
+.contact-hours-label {
+    margin: 0;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(243, 231, 213, 0.7);
+}
+
+.contact-hours-list {
+    display: grid;
+    gap: 6px;
+    font-size: 1.05rem;
     font-weight: 600;
 }
 
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    margin-bottom: 10px;
-    font-family: inherit;
-    background: rgba(10, 14, 12, 0.6);
-    color: #fff;
-}
-
-.contact button {
-    background-color: var(--accent);
-    color: #fff;
-    padding: 14px 22px;
-    border: none;
-    border-radius: 999px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background: #d59a55;
-}
-
-@media (max-width: 600px) {
-    .contact-form input,
-    .contact-form textarea,
-    .contact button {
-        min-height: 44px;
-    }
+.contact-hours-note {
+    margin: 0;
+    color: rgba(243, 231, 213, 0.7);
 }

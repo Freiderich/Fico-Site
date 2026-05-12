@@ -416,18 +416,14 @@
                     <p><strong>Hours:</strong> Daily, 8AM – 9PM</p>
                 </div>
             </div>
-            <form class="contact-form" action="mailto:info@ficocafe.com" method="post" enctype="text/plain">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@email.com" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Tell us about your order or reservation" required></textarea>
-
-                <button type="submit">Send message</button>
-            </form>
+            <div class="contact-form contact-hours">
+                <p class="contact-hours-label">Open daily</p>
+                <div class="contact-hours-list">
+                    <p>Mon-Thu: 6:30a-7p</p>
+                    <p>Fri-Sun: 7a-8p</p>
+                </div>
+                <p class="contact-hours-note">Walk-ins welcome. For large tables, call ahead.</p>
+            </div>
         </div>
     </section>
 {% endblock %}
