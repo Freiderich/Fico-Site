@@ -1,12 +1,6 @@
 .why {
     padding: 120px 0 150px;
-    background-color: #f7efe4;
-    background-image:
-        radial-gradient(circle at 14% 28%, rgba(197, 141, 76, 0.2), rgba(247, 239, 228, 0) 55%),
-        radial-gradient(circle at 32% 76%, rgba(197, 141, 76, 0.16), rgba(247, 239, 228, 0) 58%),
-        radial-gradient(circle at 54% 36%, rgba(28, 31, 28, 0.1), rgba(247, 239, 228, 0) 56%),
-        radial-gradient(circle at 68% 82%, rgba(197, 141, 76, 0.18), rgba(247, 239, 228, 0) 60%),
-        radial-gradient(circle at 86% 52%, rgba(28, 31, 28, 0.08), rgba(247, 239, 228, 0) 58%);
+    background: #f7efe4;
     color: #1c1f1c;
     position: relative;
     overflow: visible;
